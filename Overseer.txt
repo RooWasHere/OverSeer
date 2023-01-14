@@ -522,7 +522,7 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
             playerAnimation:AdjustSpeed(0.45)
             task.wait(0.5)
             end
-            workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "juggernaut", workspace)
+            workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeA", workspace)
             local playerAnimation = localPlayer.Character.Humanoid.Animator:LoadAnimation(game.ReplicatedStorage.animationSets.TPanimSets["special"].getup)
             playerAnimation.Priority = Enum.AnimationPriority.Action
             playerAnimation:Play()
