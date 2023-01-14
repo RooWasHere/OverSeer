@@ -283,13 +283,13 @@ local function start()
     setupvalue(activeStat.mvt.func, activeStat.mvt.upvalue, 9)
 
     local ammo = getupvalues(mainHandler.senv.unloadgun)[7]
-    ammo.Small = 200
-    ammo.Shells = 200
-    ammo.Long = 200
-    ammo.Short = 200
-    ammo.Heavy = 200
-    ammo.Medium = 200
-    ammo.Light = 200
+    ammo.Small = 500
+    ammo.Shells = 500
+    ammo.Long = 500
+    ammo.Short = 500
+    ammo.Heavy = 500
+    ammo.Medium = 500
+    ammo.Light = 500
 
     local ration = mainHandler.senv.ration_system_handler
     ration.Soda = 25
