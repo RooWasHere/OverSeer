@@ -595,7 +595,7 @@ local ohTable4 = {
 workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
 workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
 task.wait(3)
-workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeC", workspace)
+workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeA", workspace)
 
 _G.stats = {
     health    = 0,
