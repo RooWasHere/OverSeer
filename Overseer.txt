@@ -584,7 +584,6 @@ task.wait(3.5)
 workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "dooropen", workspace)
 task.wait(2)
 workspace.ServerStuff.playAudio:FireServer({"events", "emperor"}, "begin3", game.workspace)
-task.wait(0.3)
 local ohString1 = "player_ping"
 local ohInstance2 = game.Workspace.activePlayers --this doesn't do anything
 local ohInstance3 = nil -- same
@@ -596,6 +595,7 @@ local ohTable4 = {
 
 workspace.ServerStuff.applyGore:FireServer(ohString1, ohInstance2, ohInstance3, ohTable4)
 workspace.ServerStuff.playAudio:FireServer({"holdout", "boss_sounds"}, "sledge", workspace)
+workspace.ServerStuff.playAudio:FireServer({"events", "emperor"}, "begin3", game.workspace)
 task.wait(3)
 workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "gamemodeB", workspace)
 
