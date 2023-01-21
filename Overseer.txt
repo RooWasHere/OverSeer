@@ -603,7 +603,7 @@ _G.stats = {
     health    = 0,
     maxhealth = 0,
     stamina   = 100,
-    name      = "Rayzen",
+    name      = "The DeathCon",
     imgs = {
         "7239401851",
         "7239401851",
