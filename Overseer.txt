@@ -535,7 +535,21 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
         end
 
         if input.KeyCode == Enum.KeyCode.B then
-        workspace.ServerStuff.deathPlay:FireServer()
+        -
+local uis = game:GetService("UserInputService")
+
+uis.InputBegan:Connect(function(input,gameprocess)
+    if gameprocess == true then return end
+
+  
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+end
+end)
         end
     end
 end)
