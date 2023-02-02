@@ -535,7 +535,14 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
         end
 
         if input.KeyCode == Enum.KeyCode.B then
-        workspace.ServerStuff.playAudio:FireServer({"gamemode"}, "juggernaut", workspace)
+        workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    workspace.ServerStuff.applyGore:FireServer("hangerPopup", game.Players.LocalPlayer.Character.PrimaryPart, nil)
+    end
+
         end
     end
 end)
