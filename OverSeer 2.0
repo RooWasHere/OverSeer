@@ -534,8 +534,10 @@ _G.connection[1] = UserInputService.InputBegan:Connect(function(input, gameProce
             localPlayer.Character.HumanoidRootPart.Anchored = false
         end
 
-        if input.KeyCode == Enum.KeyCode.B then
-    print(yes)
+               if input.KeyCode == Enum.KeyCode.B then
+        workspace.ServerStuff.applyGore:FireServer("drifter_puff", game.Players.LocalPlayer.Character, nil, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
+        end
+    end
 end)
 
 _G.connection[2] = UserInputService.InputEnded:Connect(function(input, _)
